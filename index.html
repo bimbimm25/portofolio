@@ -20,23 +20,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <img src="logo/logo.png" alt="Logo" class="logo" />
 
       <nav class="navbar">
-        <a href="#" class="animate__animated animate__fadeInRight">Home</a>
-        <a href="#" class="animate__animated animate__fadeInRight">About</a>
-        <a href="#" class="animate__animated animate__fadeInRight">Skill</a>
-        <a href="#" class="animate__animated animate__fadeInRight"
+        <a href="#home" class="animate__animated animate__fadeInRight">Home</a>
+        <a href="#about" class="animate__animated animate__fadeInRight"
+          >About</a
+        >
+        <a href="#service" class="animate__animated animate__fadeInRight"
+          >Services</a
+        >
+        <a href="#skill" class="animate__animated animate__fadeInRight"
+          >Skill</a
+        >
+        <a href="#portofolio" class="animate__animated animate__fadeInRight"
           >Portofolio</a
         >
         <a href="#" class="animate__animated animate__fadeInRight">Contact</a>
       </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
       <div class="profil-home">
         <img src="logo/profil.jpeg" alt="profil" />
       </div>
@@ -47,9 +57,10 @@
           And I'm a<span class="text"></span>
         </h3>
         <p class="animate__animated animate__zoomIn">
-          I am a student at SMK PGRI 2 Sidoarjo, <br />
-          and I am still studying web development here. <br />The reason I want
-          to learn is because I have an interest in this field.
+          a frontend development student at SMK PGRI 2 SIDOARJO <br />
+          passionate about creating elegant and user-friendly web experience
+          <br />The reason I want to learn is because I have an interest in this
+          field.
         </p>
         <div class="home-sci">
           <a href="#">
@@ -77,14 +88,12 @@
         <h2>About<span>Me</span></h2>
         <h4>Frontend development</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
-          nam facere rem quas voluptatum, temporibus dolores quibusdam in
-          explicabo vero magnam necessitatibus, tempore reiciendis officiis et
-          cumque dolore eius eligendi? Odit recusandae laborum possimus corporis
-          dignissimos expedita aperiam dolores illum quisquam omnis dolorum
-          nesciunt quos quaerat, magni, minima error vel. Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Magnam modi numquam quasi iure
-          vitae, quisquam velit? Lorem. ipsum dolor sit amet consectetur
+          Saya adalah seorang frontend development yang berfokus pada pembuatan
+          tampilan web yang responsif, interaktif, dan mudah digunakan. saya
+          senang mengubah ide menjadi desain digital yang nyata. dengan
+          menggunakan HTML, CSS, dan JavaScript, saya menciptakan pengalaman
+          pengguna yang menarik dan fungsional. saya percaya bahwa desain yang
+          baik dapat meningkatkan pengalaman pengguna.
         </p>
         <a href="#" class="btn">More about me</a>
       </div>
@@ -126,89 +135,556 @@
         </div>
       </div>
     </section>
-    <h1 class="sub-tittle">My <span>Skill</span></h1>
 
+    <h1 class="sub-tittle">My <span>Skill</span></h1>
     <section>
       <div class="container1" id="skill">
         <h1 class="heading1">Technical skill</h1>
         <div class="technical-bar">
-          <div class="bar"><i style="color:#c95e2c" class='bx bxl-html5' ></i>
+          <div class="bar">
+            <i style="color: #c95e2c" class="bx bxl-html5"></i>
             <div class="info">
               <span>HTML</span>
-            </div> 
+            </div>
             <div class="progress-line html">
-              <span></span>
+              <span style="width: 90%"></span>
+            </div>
+            <p class="skill-desc">
+              Sudah memahami struktur HTML, tag-tag dasar, dan mampu membuat
+              layout web sederhana.
+            </p>
           </div>
-        </div>
-          <div class="bar"><i style="color:#147bbc" class='bx bxl-css3' ></i>
+          <div class="bar">
+            <i style="color: #147bbc" class="bx bxl-css3"></i>
             <div class="info">
               <span>CSS</span>
-            </div> 
+            </div>
             <div class="progress-line css">
-              <span></span>
+              <span style="width: 80%"></span>
+            </div>
+            <p class="skill-desc">
+              Menguasai styling, responsive design, dan animasi dasar
+              menggunakan CSS.
+            </p>
           </div>
-        </div>
-          <div class="bar"><i style="color:#b0bc1e"class='bx bxl-javascript' ></i>
+          <div class="bar">
+            <i style="color: #b0bc1e" class="bx bxl-javascript"></i>
             <div class="info">
               <span>JS</span>
-            </div> 
+            </div>
             <div class="progress-line js">
-              <span></span>
+              <span style="width: 60%"></span>
+            </div>
+            <p class="skill-desc">
+              Memahami dasar-dasar JavaScript, DOM manipulation, dan event
+              handling.
+            </p>
           </div>
-          <div class="bar"><i style="color:#004482" class='bx bxl-c-plus-plus' ></i>
+          <div class="bar">
+            <i style="color: #004482" class="bx bxl-c-plus-plus"></i>
             <div class="info">
               <span>C++</span>
-            </div> 
+            </div>
             <div class="progress-line cpp">
-              <span></span>
+              <span style="width: 50%"></span>
+            </div>
+            <p class="skill-desc">
+              Mengerti konsep dasar pemrograman, variabel, dan struktur kontrol
+              pada C++.
+            </p>
           </div>
-          <div class="bar"><i style="color: #ED8B00 " class='bx bxl-java' ></i>
+          <div class="bar">
+            <i style="color: #ed8b00" class="bx bxl-java"></i>
             <div class="info">
               <span>Java</span>
-            </div> 
+            </div>
             <div class="progress-line java">
-              <span></span>
+              <span style="width: 40%"></span>
+            </div>
+            <p class="skill-desc">
+              Baru mulai belajar Java, memahami sintaks dasar dan struktur
+              program sederhana.
+            </p>
           </div>
         </div>
       </div>
 
+      <!-- Soft Skill Section -->
       <div class="container1">
-        <h1 class="heading1">Profesional skill</h1>
-        <div class="radial-bars">
-          
-          <svg x="0px" y="0px" view box="0 0 200 200">
-            <circle class="progres-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path-path1" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">80%</div>
-          <div class="text">creativity</div>
+        <h1 class="heading1">Soft Skill</h1>
+        <div class="soft-skill-list">
+          <div class="soft-skill-card">
+            <i
+              class="bx bx-brain"
+              style="color: #6c63ff; font-size: 2rem; margin-top: 5px"
+            ></i>
+            <h3>Adaptability</h3>
+            <p>
+              Mampu beradaptasi dengan cepat terhadap perubahan dan tantangan
+              baru di lingkungan kerja.
+            </p>
+          </div>
+          <div class="soft-skill-card">
+            <i
+              class="bx bx-group"
+              style="color: #ff6584; font-size: 2rem; margin-top: 10px"
+            ></i>
+            <h3>Collaboration</h3>
+            <p>
+              Senang bekerja sama dalam tim untuk mencapai tujuan bersama secara
+              efektif.
+            </p>
+          </div>
+          <div class="soft-skill-card">
+            <i
+              class="bx bx-bulb"
+              style="color: #43e97b; font-size: 2rem; margin-top: 10px"
+            ></i>
+            <h3>Critical Thinking</h3>
+            <p>
+              Menganalisis masalah secara logis dan menemukan solusi yang
+              inovatif.
+            </p>
+          </div>
+          <div class="soft-skill-card">
+            <i
+              class="bx bx-message-square-detail"
+              style="color: #ffd86f; font-size: 2rem; margin-top: 10px"
+            ></i>
+            <h3>Empathy</h3>
+            <p>
+              Memahami dan menghargai sudut pandang orang lain untuk menciptakan
+              lingkungan kerja yang harmonis.
+            </p>
+          </div>
+          <div class="soft-skill-card">
+            <i
+              class="bx bx-time-five"
+              style="color: #00c9a7; font-size: 2rem; margin-top: 10px"
+            ></i>
+            <h3>Time Management</h3>
+            <p>
+              Mengatur waktu dengan baik untuk menyelesaikan tugas secara
+              efisien dan tepat waktu.
+            </p>
+          </div>
         </div>
-        <div class="radial-bars">
-          
-          <svg x="0px" y="0px" view box="0 0 200 200">
-            <circle class="progres-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path-path2" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">75%</div>
-          <div class="text">communication</div>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <div class="blue-blob blob-1"></div>
+      <div class="blue-blob blob-2"></div>
+
+      <div class="container">
+        <div class="portfolio-header">
+          <h2 class="portfolio-title">
+            My <span style="color: #1e40fe">Portofolio</span>
+          </h2>
+          <p class="portfolio-subtitle">
+            Berikut adalah beberapa proyek yang telah saya kerjakan, menampilkan
+            berbagai teknologi dan keterampilan yang saya kuasai.
+          </p>
         </div>
-        <div class="radial-bars">
-          
-          <svg x="0px" y="0px" view box="0 0 200 200">
-            <circle class="progres-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path-path3" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">60%</div>
-          <div class="text">problem solving</div>
+
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+          <button class="filter-btn" data-filter="other">Lainnya</button>
         </div>
-        <div class="radial-bars">
-          
-          <svg x="0px" y="0px" view box="0 0 200 200">
-            <circle class="progres-bar" cx="100" cy="100" r="80"></circle>
-            <circle class="path-path4" cx="100" cy="100" r="80"></circle>
-          </svg>
-          <div class="percentage">90%</div>
-          <div class="text">team work</div>
+
+        <div class="portfolio-grid">
+          <!-- Item 1: Landing Page SMK PGRI 2 Sidoarjo -->
+          <div class="portfolio-item" data-category="web">
+            <img
+              src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Landing Page SMK PGRI 2 Sidoarjo"
+              class="portfolio-img"
+            />
+            <div class="portfolio-content">
+              <h3 class="portfolio-item-title">
+                Landing Page SMK PGRI 2 Sidoarjo
+              </h3>
+              <p class="portfolio-item-desc">
+                Website landing page untuk sekolah SMK PGRI 2 Sidoarjo yang
+                menampilkan informasi sekolah, program studi, dan kegiatan
+                siswa.
+              </p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" x2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Web Bio Link -->
+          <div class="portfolio-item" data-category="web">
+            <img
+              src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Web Bio Link"
+              class="portfolio-img"
+            />
+            <div class="portfolio-content">
+              <h3 class="portfolio-item-title">Web Bio Link</h3>
+              <p class="portfolio-item-desc">
+                Platform bio link yang memungkinkan pengguna untuk mengumpulkan
+                semua tautan media sosial mereka dalam satu halaman yang mudah
+                diakses.
+              </p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP</span>
+              </div>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" x2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Web Portofolio Pribadi -->
+          <div class="portfolio-item" data-category="web design">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Web Portofolio Pribadi"
+              class="portfolio-img"
+            />
+            <div class="portfolio-content">
+              <h3 class="portfolio-item-title">Web Portofolio Pribadi</h3>
+              <p class="portfolio-item-desc">
+                Website portofolio pribadi yang menampilkan keterampilan,
+                pengalaman, dan proyek-proyek yang telah saya selesaikan.
+              </p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" x2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Web Valentine -->
+          <div class="portfolio-item" data-category="web other">
+            <img
+              src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Web Valentine"
+              class="portfolio-img"
+            />
+            <div class="portfolio-content">
+              <h3 class="portfolio-item-title">Web Valentine</h3>
+              <p class="portfolio-item-desc">
+                Website interaktif bertema Valentine dengan animasi, musik, dan
+                pesan khusus yang dapat dipersonalisasi.
+              </p>
+              <div class="portfolio-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Animasi CSS</span>
+              </div>
+              <div class="portfolio-links">
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" x2="3"></line>
+                  </svg>
+                  Live Demo
+                </a>
+                <a href="#" class="portfolio-link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5: Coming Soon -->
+          <div class="portfolio-item coming-soon" data-category="other">
+            <div class="coming-soon-content">
+              <div class="coming-soon-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#1e40fe"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="#1e40fe"
+                    stroke-width="2"
+                    fill="#f0f4ff"
+                  />
+                  <path d="M12 6v6l4 2" stroke="#1e40fe" stroke-width="2" />
+                </svg>
+              </div>
+              <h3
+                class="coming-soon-title"
+                style="
+                  margin-top: 1rem;
+                  color: #fff;
+                  font-size: 1.3rem;
+                  letter-spacing: 1px;
+                "
+              >
+                Coming Soon
+              </h3>
+              <p
+                class="coming-soon-desc"
+                style="color: #b2afaf; margin: 0.5rem 0 0 0; font-size: 1rem"
+              >
+                Proyek terbaru akan segera hadir di sini. Nantikan update
+                selanjutnya!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2>Contact <span style="color:#1e40fe;">Me</span></h2>
+    </div>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <div>
+            <h3>Informasi Kontak</h3>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Lokasi</h4>
+                  <p>Kab. Sidoarjo, JAWA TIMUR</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>bimaardiansyah2509@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Telepon</h4>
+                  <p>+62 822 3266 8881</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social-link" title="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Kirim Pesan</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-control"
+                placeholder="Masukkan nama lengkap Anda"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Masukkan alamat email Anda"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                class="form-control"
+                placeholder="Masukkan subjek pesan"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                placeholder="Tulis pesan Anda di sini..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span class="btn-text">Kirim Pesan</span>
+            </button>
+
+            <div id="notification" class="notification"></div>
+          </form>
         </div>
       </div>
     </section>

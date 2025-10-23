@@ -1,3 +1,37 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu-btn");
+  const menuList = document.getElementById("nav");
+  const overlay = document.querySelector(".overlay");
+
+  menuBtn.addEventListener("click", function () {
+    menuList.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.style.overflow = menuList.classList.contains("active")
+      ? "hidden"
+      : "";
+  });
+
+  //close menu when click on menu item
+  overlay.addEventListener("click", function () {
+    menuList.classList.remove("active");
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  });
+
+  // Close menu when a menu item is clicked
+  const navLinks =document.querySelectorAll(".navbar a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      menuList.classList.remove("active");
+      overlay.classList.remove("active");
+      document.body.style.overflow = "";
+    });
+  });
+});
+
+
+// close menu navbar
+
 var typed = new Typed(".text", {
   strings: ["Frontend Development", "Editor", "Guitarist"],
   typeSpeed: 100,
@@ -36,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 
 //script untuk form kontak
 document.getElementById("contactForm").addEventListener("submit", function (e) {
